@@ -1,4 +1,4 @@
-# starwars-planets
+# Star Wars Planets
 Fetch the star wars planet data by using stat war api, list and show details using SwiftUI and Combine frameworks
 
 ## 🔖 Swift UI Framework (First party)
