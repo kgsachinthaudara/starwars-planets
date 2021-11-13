@@ -11,6 +11,11 @@
 		FF512DF82740478E00DFEE78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512DF72740478E00DFEE78 /* ContentView.swift */; };
 		FF512DFA2740479000DFEE78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF512DF92740479000DFEE78 /* Assets.xcassets */; };
 		FF512DFD2740479000DFEE78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF512DFC2740479000DFEE78 /* Preview Assets.xcassets */; };
+		FF512E0A2740483300DFEE78 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512E092740483300DFEE78 /* APIService.swift */; };
+		FF512E0E2740485800DFEE78 /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512E0D2740485800DFEE78 /* ImageLoaderService.swift */; };
+		FF512E112740487A00DFEE78 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512E102740487A00DFEE78 /* ImageView.swift */; };
+		FF512E14274048D800DFEE78 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512E13274048D800DFEE78 /* Planet.swift */; };
+		FF512E1F2740495E00DFEE78 /* PlanetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512E1E2740495E00DFEE78 /* PlanetResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		FF512DF92740479000DFEE78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF512DFC2740479000DFEE78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF512DFE2740479000DFEE78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF512E092740483300DFEE78 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		FF512E0D2740485800DFEE78 /* ImageLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
+		FF512E102740487A00DFEE78 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		FF512E13274048D800DFEE78 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		FF512E1E2740495E00DFEE78 /* PlanetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,9 @@
 		FF512DF42740478E00DFEE78 /* StarWarsPlanets */ = {
 			isa = PBXGroup;
 			children = (
+				FF512E072740480700DFEE78 /* Models */,
+				FF512E062740480100DFEE78 /* Components */,
+				FF512E05274047FA00DFEE78 /* Services */,
 				FF512DF52740478E00DFEE78 /* StarWarsPlanetsApp.swift */,
 				FF512DF72740478E00DFEE78 /* ContentView.swift */,
 				FF512DF92740479000DFEE78 /* Assets.xcassets */,
@@ -67,6 +80,32 @@
 				FF512DFC2740479000DFEE78 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF512E05274047FA00DFEE78 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF512E092740483300DFEE78 /* APIService.swift */,
+				FF512E0D2740485800DFEE78 /* ImageLoaderService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FF512E062740480100DFEE78 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FF512E102740487A00DFEE78 /* ImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FF512E072740480700DFEE78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF512E13274048D800DFEE78 /* Planet.swift */,
+				FF512E1E2740495E00DFEE78 /* PlanetResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF512E112740487A00DFEE78 /* ImageView.swift in Sources */,
 				FF512DF82740478E00DFEE78 /* ContentView.swift in Sources */,
+				FF512E0A2740483300DFEE78 /* APIService.swift in Sources */,
+				FF512E1F2740495E00DFEE78 /* PlanetResponse.swift in Sources */,
+				FF512E14274048D800DFEE78 /* Planet.swift in Sources */,
+				FF512E0E2740485800DFEE78 /* ImageLoaderService.swift in Sources */,
 				FF512DF62740478E00DFEE78 /* StarWarsPlanetsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
