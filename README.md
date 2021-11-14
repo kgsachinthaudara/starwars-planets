@@ -8,7 +8,7 @@ Swift UI is using declarative syntax, there for any developer can easily underst
 Combine is apple thereself developed subscriber driven ractive(observable) framework. Good perfomance (The framework not depend on fundation type, rather at a lower level), Easily work with SwiftUI, easy read and maintain are benefit of the framework.
 
 ### 👌 Application flow
-1. The planet list fetch by using URLSession api and make subject to handle async server calls.
+1. The planet list fetch by using URLSession api and make service to handle async server calls.
 2. SwiftUI List listen publisher to via ObservableObject protocol.
 3. Models folder keep all the necessary models.
 4. Services folder keep all the necessary service implementations.
