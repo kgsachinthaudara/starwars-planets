@@ -33,11 +33,11 @@ class APIService: ObservableObject {
     }
     
     // Load the star wars planets form the swapi
-    func loadPlanets() {
+    func loadPlanets() -> AnyPublisher<[Planet], Error> {
         let url = URL(string: "https://swapi.dev/api/planets");
         let request = try! URLRequest(url: url!);
         
-        self.publisherRequest = URLSession.shared.dataTaskPublisher(for: request)
+        let publisher = URLSession.shared.dataTaskPublisher(for: request)
             .retry(3)
             .mapError { error -> Error in
                 // Handle Network errors
@@ -50,6 +50,7 @@ class APIService: ObservableObject {
             }
             .map{ $0.data }
             .decode(type: PlanetResponse.self, decoder: JSONDecoder())
+            .map{ $0.results } // Map PlanetResponse results
             .mapError { error -> Error in
                 // Handle JSONDecode errors
                 switch error {
@@ -59,7 +60,9 @@ class APIService: ObservableObject {
                     return APIError.unknownError(description: error.localizedDescription)
                 }
             }
-            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
+        
+        self.publisherRequest = publisher.receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { value in
                     switch value {
                     case .finished:
@@ -69,7 +72,9 @@ class APIService: ObservableObject {
                         self.errorMessage = error.localizedDescription;
                     }
             }, receiveValue: {data in
-                self.response = data.results; // Set the array of planets to the response
+                self.response = data; // Set the array of planets to the response
             })
+        
+        return publisher;
     }
 }

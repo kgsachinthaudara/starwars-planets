@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF0CE64227428F9B00E23501 /* StarWarsPlanetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CE64127428F9B00E23501 /* StarWarsPlanetsTests.swift */; };
+		FF0CE64B2742919100E23501 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512E092740483300DFEE78 /* APIService.swift */; };
+		FF0CE64E27429F4000E23501 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512E13274048D800DFEE78 /* Planet.swift */; };
+		FF0CE65127429F4200E23501 /* PlanetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512E1E2740495E00DFEE78 /* PlanetResponse.swift */; };
 		FF512DF62740478E00DFEE78 /* StarWarsPlanetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512DF52740478E00DFEE78 /* StarWarsPlanetsApp.swift */; };
 		FF512DF82740478E00DFEE78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512DF72740478E00DFEE78 /* ContentView.swift */; };
 		FF512DFA2740479000DFEE78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF512DF92740479000DFEE78 /* Assets.xcassets */; };
@@ -18,7 +22,20 @@
 		FF512E1F2740495E00DFEE78 /* PlanetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF512E1E2740495E00DFEE78 /* PlanetResponse.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FF0CE64427428F9B00E23501 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF512DEA2740478E00DFEE78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF512DF12740478E00DFEE78;
+			remoteInfo = StarWarsPlanets;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		FF0CE63F27428F9B00E23501 /* StarWarsPlanetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsPlanetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0CE64127428F9B00E23501 /* StarWarsPlanetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPlanetsTests.swift; sourceTree = "<group>"; };
+		FF0CE64327428F9B00E23501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF512DF22740478E00DFEE78 /* StarWarsPlanets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsPlanets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF512DF52740478E00DFEE78 /* StarWarsPlanetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPlanetsApp.swift; sourceTree = "<group>"; };
 		FF512DF72740478E00DFEE78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FF0CE63C27428F9B00E23501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF512DEF2740478E00DFEE78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +67,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF0CE64027428F9B00E23501 /* StarWarsPlanetsTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CE64127428F9B00E23501 /* StarWarsPlanetsTests.swift */,
+				FF0CE64327428F9B00E23501 /* Info.plist */,
+			);
+			path = StarWarsPlanetsTests;
+			sourceTree = "<group>";
+		};
 		FF512DE92740478E00DFEE78 = {
 			isa = PBXGroup;
 			children = (
 				FF512DF42740478E00DFEE78 /* StarWarsPlanets */,
+				FF0CE64027428F9B00E23501 /* StarWarsPlanetsTests */,
 				FF512DF32740478E00DFEE78 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				FF512DF22740478E00DFEE78 /* StarWarsPlanets.app */,
+				FF0CE63F27428F9B00E23501 /* StarWarsPlanetsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +146,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FF0CE63E27428F9B00E23501 /* StarWarsPlanetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0CE64827428F9B00E23501 /* Build configuration list for PBXNativeTarget "StarWarsPlanetsTests" */;
+			buildPhases = (
+				FF0CE63B27428F9B00E23501 /* Sources */,
+				FF0CE63C27428F9B00E23501 /* Frameworks */,
+				FF0CE63D27428F9B00E23501 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF0CE64527428F9B00E23501 /* PBXTargetDependency */,
+			);
+			name = StarWarsPlanetsTests;
+			productName = StarWarsPlanetsTests;
+			productReference = FF0CE63F27428F9B00E23501 /* StarWarsPlanetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FF512DF12740478E00DFEE78 /* StarWarsPlanets */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF512E012740479000DFEE78 /* Build configuration list for PBXNativeTarget "StarWarsPlanets" */;
@@ -137,6 +190,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					FF0CE63E27428F9B00E23501 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FF512DF12740478E00DFEE78;
+					};
 					FF512DF12740478E00DFEE78 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -156,11 +213,19 @@
 			projectRoot = "";
 			targets = (
 				FF512DF12740478E00DFEE78 /* StarWarsPlanets */,
+				FF0CE63E27428F9B00E23501 /* StarWarsPlanetsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FF0CE63D27428F9B00E23501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF512DF02740478E00DFEE78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +238,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FF0CE63B27428F9B00E23501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0CE64E27429F4000E23501 /* Planet.swift in Sources */,
+				FF0CE64B2742919100E23501 /* APIService.swift in Sources */,
+				FF0CE65127429F4200E23501 /* PlanetResponse.swift in Sources */,
+				FF0CE64227428F9B00E23501 /* StarWarsPlanetsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF512DEE2740478E00DFEE78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,7 +265,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FF0CE64527428F9B00E23501 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF512DF12740478E00DFEE78 /* StarWarsPlanets */;
+			targetProxy = FF0CE64427428F9B00E23501 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		FF0CE64627428F9B00E23501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86MV36N744;
+				INFOPLIST_FILE = StarWarsPlanetsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sachintha.StarWarsPlanetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWarsPlanets.app/StarWarsPlanets";
+			};
+			name = Debug;
+		};
+		FF0CE64727428F9B00E23501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86MV36N744;
+				INFOPLIST_FILE = StarWarsPlanetsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sachintha.StarWarsPlanetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWarsPlanets.app/StarWarsPlanets";
+			};
+			name = Release;
+		};
 		FF512DFF2740479000DFEE78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -353,6 +477,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF0CE64827428F9B00E23501 /* Build configuration list for PBXNativeTarget "StarWarsPlanetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF0CE64627428F9B00E23501 /* Debug */,
+				FF0CE64727428F9B00E23501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FF512DED2740478E00DFEE78 /* Build configuration list for PBXProject "StarWarsPlanets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
