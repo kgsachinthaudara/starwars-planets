@@ -14,7 +14,7 @@ struct ContentView: View {
     
     init() {
         // Load Planets from server
-        self.apiService.loadPlanets();
+        let _ = self.apiService.loadPlanets();
     }
     
     var body: some View {
