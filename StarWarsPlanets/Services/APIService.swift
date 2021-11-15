@@ -35,10 +35,9 @@ class APIService: ObservableObject {
     // Load the star wars planets form the swapi
     func loadPlanets() -> AnyPublisher<[Planet], Error> {
         let url = URL(string: "https://swapi.dev/api/planets");
-        let request = try! URLRequest(url: url!);
         
-        let publisher = URLSession.shared.dataTaskPublisher(for: request)
-            .retry(3)
+        let publisher = URLSession.shared.dataTaskPublisher(for: url!)
+            .retry(3) // If request fail for any circumstance, Retry 3 times
             .mapError { error -> Error in
                 // Handle Network errors
                 switch error {
